@@ -1,13 +1,13 @@
 export function range(
   from: number,
   to: number,
-  stepFinal = 1
+  step = 1
 ): Iterable<number> {
   const iterable = function* (): Iterable<number> {
     let value = from;
-    while (!isBreakCondition(value, to, stepFinal)) {
+    while (!isBreakCondition(value, to, step)) {
       yield value;
-      value += stepFinal;
+      value += step;
     }
   };
   return iterable();
