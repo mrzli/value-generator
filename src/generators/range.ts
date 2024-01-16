@@ -1,8 +1,4 @@
-export function range(
-  from: number,
-  to: number,
-  step = 1
-): Iterable<number> {
+export function range(from: number, to: number, step = 1): Iterable<number> {
   const iterable = function* (): Iterable<number> {
     let value = from;
     while (!isBreakCondition(value, to, step)) {

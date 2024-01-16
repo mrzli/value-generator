@@ -1,6 +1,6 @@
 export function getFirstNItems(
   iterable: Iterable<number>,
-  n: number
+  n: number,
 ): readonly number[] {
   const result: number[] = [];
   let index = 0;

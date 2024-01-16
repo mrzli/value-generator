@@ -34,7 +34,7 @@ import { index } from '@gmjs/value-generators';
 
 const output = applyFn(
   index(5),
-  map((v: number) => v + 2)
+  map((v: number) => v + 2),
 );
 console.log([...output]); // using spread operator to convert iterable to array
 // [2, 3, 4, 5, 6]
